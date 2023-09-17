@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import Router from "./Router"
 
 function App() {
+  useEffect(() => {
+    const ac = new AbortController();
+    document.title = "Expense Tracker";
+    return function cleanup() {
+        ac.abort();
+    };
+}, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="font-nunito">
+      <Router />
     </div>
   );
 }
