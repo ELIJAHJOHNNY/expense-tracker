@@ -1,6 +1,6 @@
 # Getting Started with expense-tracker
 
-This project was built by Kugbiyi Elijah using React and Firebase.
+This project was built by Kugbiyi Elijah using React and Firebase. The mobile version is in progress
 
 To run the application, navigate to the project directory and run the following code:
 
